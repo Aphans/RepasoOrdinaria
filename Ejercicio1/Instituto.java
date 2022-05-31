@@ -22,28 +22,39 @@ public class Instituto {
 		return false;
 	}
 	public void asignarJefe(String dni,Profesor jefe) {
-		if(jefe instanceof Jefe) {
 			for (int i = 0; i < profesores.length; i++) {
-				if(profesores[i].getDni().equals(dni))
-					profesores[i].setJefe((Jefe)jefe);
-			}
-		}
-		System.out.println("Debe pasar un profesor que sea jefe");
-	}
-	public void mostrarJefe(String dni) {
-		for (int i = 0; i < profesores.length; i++) {
-			if(profesores[i].getDni().equals(dni))
-				if(!profesores[i].getDni().equals(null)) {
-				profesores[i].getJefe();
+				if(profesores[i].getDni().equals(dni)) {
+					profesores[i].setJefe(jefe);
+					return;
 				}
-				System.out.println("El profesor no tiene jefe asignado");
-		}
+			
+			}
 	}
+	public String mostrarJefe(String dni) {
+		for (int i = 0; i < profesores.length;) {
+			if(profesores[i].getDni().equals(dni)) {
+				return "Jefe del profesor:"+ profesores[i].getJefe().toString();
+				}
+			}
+			System.out.println("El profesor no tiene jefe asignado");
+			return null;
+		
+	}
+	
 	public void mostrarInstituto() {
-		for (int i = 0; i < profesores.length; i++) {
+		for (int i = 0; i < profesores.length;) {
 			if(profesores[i] instanceof ProfesorSecundaria)
-			    profesores[i].toString();
+				if(profesores[i]!=null) {
+			    System.out.println(profesores[i]);
+				System.out.println("Alumnos:");
 				((ProfesorSecundaria) profesores[i]).mostrarAlumnos();
+				return;
+				}
+				else {
+					return;
+				}
+				
+				
 		}
 	}
 	public double gastosInstituto() {
