@@ -1,0 +1,11 @@
+Pera 23
+Naranja 5
+Avellanas 3
+Lechuga 3
+Manzana 15
+Coco 2
+Leche 2
+Pan 5
+Huevos 19
+
+Precio Total:8,10

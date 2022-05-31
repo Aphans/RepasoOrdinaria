@@ -25,6 +25,7 @@ public class Main {
 			opcion = sc.next();
 			opcion.toUpperCase();
 		}
+		cliente.sacarTicket();
 		
 	}
 
