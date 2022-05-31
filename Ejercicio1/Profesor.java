@@ -1,5 +1,6 @@
+import java.io.Serializable;
 
-public class Profesor {
+public class Profesor implements Serializable{
 	private String dni,nombre,nombreDepartamento;
 	private Profesor jefe;
 	Profesor(String dni,String nombre,String nombreDepartamento){

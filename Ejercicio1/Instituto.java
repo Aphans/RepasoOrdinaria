@@ -13,6 +13,7 @@ public class Instituto {
 		}
 		return false;
 	}
+	
 	public boolean bajaProfesor(String dni) {
 		for (int i = 0; i < profesores.length; ) {
 			if(profesores[i].getDni().equals(dni))
@@ -53,8 +54,6 @@ public class Instituto {
 				else {
 					return;
 				}
-				
-				
 		}
 	}
 	public double gastosInstituto() {

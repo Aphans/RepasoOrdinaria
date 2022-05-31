@@ -1,5 +1,6 @@
+import java.io.Serializable;
 
-public class ProfesorTecnico extends Profesor {
+public class ProfesorTecnico extends Profesor implements Serializable{
 	private int numeroHoras;
 	ProfesorTecnico(String dni, String nombre, String nombreDepartamento) {
 		super(dni, nombre, nombreDepartamento);

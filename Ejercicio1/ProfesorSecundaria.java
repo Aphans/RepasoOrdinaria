@@ -1,7 +1,8 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProfesorSecundaria extends Profesor{
+public class ProfesorSecundaria extends Profesor implements Serializable{
 	private Libro libro;
 	private List<Alumno> alumnos = new ArrayList<Alumno>();
 	static int contadorAlumnos=0;
