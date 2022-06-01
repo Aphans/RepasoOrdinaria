@@ -1,0 +1,3 @@
+StreamHeader excepcion que sale cuando ya hemos abierto un fichero e emos escrito en él, y abrimos otro sin una clase de mi objectoutput propia.
+NullPointerException sale cuando no hemos instanciado algo
+Si sale algo de serialización añadir serialVersionUID y borrar archivos e compilar de nuevo

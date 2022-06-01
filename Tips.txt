@@ -1,0 +1,5 @@
+Si leo un archivo de texto y quiero crear objetos. Separo las lineas con split
+Si quiero hacer un objeto mediante arrays, recorro estos y los almaceno en variables según su tipo e creo un objeto y le paso las variables al
+constructor de ese objeto.
+Si leo un objeto escribo un objeto.
+Acordarse de el método toString del objeto.
