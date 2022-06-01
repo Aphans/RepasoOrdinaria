@@ -24,8 +24,10 @@ public class Main {
 			System.out.println("¿Desea añadir un producto?S/N");
 			opcion = sc.next();
 			opcion.toUpperCase();
+			if(opcion.equals("N") | !opcion.equals("S"))cliente.eliminarProducto();
 		}
 		cliente.sacarTicket();
+		cliente.mostrarProductos();
 		
 	}
 

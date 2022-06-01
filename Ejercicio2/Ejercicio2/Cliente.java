@@ -96,35 +96,7 @@ public class Cliente {
 				 cantidad = entry.getValue();
 				cantidad-=cantidadEliminar;
 				productos.put(producto, cantidad);
-				Integer cantidades = null;
-				try {
-					String linea;
-					Scanner scanner = new Scanner(file);
-					while(scanner.hasNext()) {
-					linea = scanner.next();
-					String lineas[] = linea.split(" ");
-					productos0= lineas[0];
-					cantidades = Integer.valueOf(lineas[1]);
-					}
-					try {
-						BufferedWriter bw = new BufferedWriter(new FileWriter(file,true));
-						if(productos0.equals(producto)) {
-							cantidades-=cantidadEliminar;
-							bw.write(cantidades);
-							if(cantidades==0) {
-								bw.write(" ");
-							}
-						}
-					} catch (IOException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
-				} catch (FileNotFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				
-				 }
+		}
 			}
 		}
 			

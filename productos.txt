@@ -13,3 +13,5 @@ Coco 2
 Lechuga 3
 Pera 5
 Pan 2
+Rosca 20
+Besugo 10
