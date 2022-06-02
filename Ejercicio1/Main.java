@@ -8,10 +8,10 @@ public class Main {
 		ProfesorTecnico s3= new ProfesorTecnico("023383333T", "Alberto", "Limpieza");
 		/*ALUMNOS*/
 		Alumno alu1 = new Alumno("0002","Pepe");
-		Alumno alu2 = new Alumno("003","Luis");
+		Alumno alu2 = new Alumno("09333939A","Luis");
 		/*Asignar alumnos a profesores*/
 		boolean correcto = false;
-		correcto = s1.altaAlumno(alu2);
+		correcto = s1.altaAlumno(alu2);//Si el dni es correcto
 		if(correcto) {
 			System.out.println("La operación ha tenido exito");
 		}
@@ -42,5 +42,6 @@ public class Main {
 		instituto.asignarJefe("03188833A", s3);
 		System.out.println(instituto.mostrarJefe("03188833A"));
 	}
+
 	
 }

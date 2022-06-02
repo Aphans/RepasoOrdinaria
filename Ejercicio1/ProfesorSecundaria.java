@@ -21,10 +21,12 @@ public class ProfesorSecundaria extends Profesor implements Serializable{
 	 * @return
 	 */
 	public boolean altaAlumno(Alumno alumno) {
+		if(Alumno.validarDNI(alumno.getDni())) {
 		if(contadorAlumnos<3) {
 			alumnos.add(alumno);
 			contadorAlumnos++;
 			return true;
+		}
 		}
 		return false;
 	}

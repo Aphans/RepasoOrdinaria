@@ -8,6 +8,9 @@
 	<classpathentry kind="src" path="Ejercicio6"/>
 	<classpathentry kind="src" path="Ejercicio7"/>
 	<classpathentry kind="src" path="Ejercicio8"/>
+	<classpathentry kind="src" path="Ejercicio9"/>
+	<classpathentry kind="src" path="Ejercicio10"/>
+	<classpathentry kind="src" path="Ejercicio11"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
 		<attributes>
 			<attribute name="module" value="true"/>
